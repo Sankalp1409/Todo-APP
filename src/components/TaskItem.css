@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Life+Savers&display=swap");
+.task {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+.not-completed {
+  text-decoration: none;
+}
+
+.actions {
+  text-align: right;
+}
+
+.edit {
+  background-color: #20a0b0;
+  color: white;
+}
+.save {
+  background-color: limegreen;
+  color: white;
+}
+.delete {
+  background-color: crimson;
+  color: white;
+}
+.back {
+  background-color: darkgray;
+  color: white;
+}
+
+input {
+  border: 2x solid #c0c0c0;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+button {
+  border: none;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
