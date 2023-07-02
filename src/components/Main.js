@@ -5,7 +5,9 @@ import "./Main.css";
 export default class Main extends Component {
   constructor(props) {
     super(props);
-    this.state = { tasks: JSON.parse(localStorage.getItem("task")) };
+    if (localStorage.length !== 0)
+      this.state = { tasks: JSON.parse(localStorage.getItem("task")) };
+    else this.state = { tasks: [] };
     this.createTask = this.createTask.bind(this);
     this.deleteTask = this.deleteTask.bind(this);
     this.editTask = this.editTask.bind(this);
@@ -42,6 +44,8 @@ export default class Main extends Component {
     console.log("toggle called");
     let arr = this.state.tasks;
     arr[index].status = !arr[index].status;
+    let localStorageData = JSON.stringify(arr);
+    localStorage.setItem("task", localStorageData);
     this.setState({ tasks: arr });
   }
   render() {

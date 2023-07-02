@@ -27,7 +27,7 @@ export default class TaskItem extends Component {
   handleBack(e) {
     this.setState({ taskName: this.props.taskItem.taskName, isEdit: false });
   }
-  toggleTask() {
+  toggleTask(e) {
     this.props.toggleTask(this.props.id);
   }
   render() {

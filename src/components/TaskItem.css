@@ -30,7 +30,9 @@
   background-color: darkgray;
   color: white;
 }
-
+input[type="checkbox"]:checked {
+  font-size: 10px;
+}
 input {
   border: 2x solid #c0c0c0;
   font-size: 20px;
